@@ -19,6 +19,7 @@ function App() {
            <strong>Bride:</strong> Mariko
         </p>
       </div>
+      <img src={`${process.env.PUBLIC_URL}/fish.jpg`} alt="Fish" style={{ marginTop: '50px' }} />
     </div>
   );
 }
