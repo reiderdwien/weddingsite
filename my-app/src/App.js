@@ -14,10 +14,10 @@ function App() {
       <div style={{ background: 'white', padding: '20px', borderRadius: '10px', display: 'inline-block', color: 'black' }}>
         <h2>The Happy Couple</h2>
         <p>
-          <strong>Groom:</strong> Reid
+           <strong>Groom:</strong> Reid
         </p>
         <p>
-          <strong>Bride:</strong> Mariko
+           <strong>Bride:</strong> Mariko
         </p>
       </div>
     </div>
