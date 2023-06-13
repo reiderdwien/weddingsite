@@ -1,0 +1,21 @@
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 0 1 calc(33% - 20px);
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%; /* Take up full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* You can set this to any value */
+  object-fit: cover; /* This ensures that the image covers the full width/height of the div without distorting */
+  overflow: hidden;
+}
+
+.modal-image {
+  max-width: 100%;
+}
