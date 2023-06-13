@@ -19,11 +19,12 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
       <div style={{ textAlign: 'right' }}>
         <button onClick={() => changeLanguage('en')}>EN</button>
         <button onClick={() => changeLanguage('ja')}>JA</button>
       </div>
+      <Navbar />
+
       <div style={{ textAlign: 'center', padding: '50px', background: 'pink', color: 'purple' }}>
         <Routes>
           <Route path="gallery" element={<Gallery />} />

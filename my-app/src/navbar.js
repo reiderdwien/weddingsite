@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import './navbar.css';
 
-export default function Navbar() {
+const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
-    <nav style={{ background: 'purple', padding: '10px' }}>
-      <Link style={{ margin: '10px', color: 'white' }} to="/">Home</Link>
-      <Link style={{ margin: '10px', color: 'white' }} to="/gallery">Gallery</Link>
-      <Link style={{ margin: '10px', color: 'white' }} to="/games">Games</Link>
-      <Link style={{ margin: '10px', color: 'white' }} to="/gifts">Gifts</Link>
+    <nav className="navbar">
+      <Link to="/">{t('Home')}</Link> |
+      <Link to="/gallery">{t('Gallery')}</Link> |
+      <Link to="/games">{t('Games')}</Link> |
+      <Link to="/gifts">{t('Gifts')}</Link>
     </nav>
   );
-}
+};
+
+export default Navbar;
