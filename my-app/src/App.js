@@ -36,8 +36,8 @@ function App() {
                 <p>{t('Description')}</p>
                 <div style={{ background: 'white', padding: '20px', borderRadius: '10px', display: 'inline-block', color: 'black' }}>
                   <h2>{t('TheHappyCouple')}</h2>
-                  <p><strong>{t('Groom')}:</strong> Reid</p>
-                  <p><strong>{t('Bride')}:</strong> Mariko</p>
+                  <p><strong>{t('Groom')}:</strong> {t('Reid')}</p>
+                  <p><strong>{t('Bride')}:</strong> {t('Mariko')}</p>
                 </div>
               <img src={`${process.env.PUBLIC_URL}/fish.jpg`} alt="Fish" style={{ marginTop: '50px' }} />
             </>
