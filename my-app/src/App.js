@@ -39,7 +39,6 @@ function App() {
                   <p><strong>{t('Groom')}:</strong> {t('Reid')}</p>
                   <p><strong>{t('Bride')}:</strong> {t('Mariko')}</p>
                 </div>
-              <img src={`${process.env.PUBLIC_URL}/fish.jpg`} alt="Fish" style={{ marginTop: '50px' }} />
             </>
           } />
         </Routes>

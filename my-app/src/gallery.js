@@ -3,13 +3,32 @@ import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
 import './gallery.css';
 
+const customStyles = {
+  content: {
+    width: '60%',
+    height: '80%',
+    margin: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+};
+
 const Gallery = () => {
   const { t } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Just an example, replace with your own images
-  const images = ['gallery.jpg', 'fish.jpg', 'fish.jpg', 'fish.jpg', 'fish.jpg', 'fish.jpg'];
+  const images = [
+     {src: 'gallery.jpg', caption: 'At yellowstone'},
+     {src: 'fish.jpg', caption: 'Fish'},
+     {src: 'fish.jpg', caption: 'Fish'},
+     {src: 'fish.jpg', caption: 'Fish'},
+     {src: 'fish.jpg', caption: 'Fish'},
+     {src: 'fish.jpg', caption: 'Fish'}
+  ];
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -27,7 +46,7 @@ const Gallery = () => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={image}
+            src={image.src}
             alt=""
             className="gallery-item"
             onClick={() => openModal(image)}
@@ -37,9 +56,15 @@ const Gallery = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
+        style={customStyles}
         contentLabel="Image Modal"
       >
-        <img src={selectedImage} alt="" className="modal-image" />
+          {selectedImage && (
+            <>
+              <img src={selectedImage.src} alt="" className="modal-image" />
+              <p>{selectedImage.caption}</p>
+            </>
+          )}
         <button onClick={closeModal}>Close</button>
       </Modal>
     </div>
