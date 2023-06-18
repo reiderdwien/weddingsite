@@ -6,6 +6,14 @@
   "Bride": "新婦",
   "Home": "ホーム",
   "Gallery": "ギャラリー",
+  "GalleryCaptions": {
+    "caption1": "example_ja",
+    "caption2": "example_ja",
+    "caption3": "example_ja",
+    "caption4": "example_ja",
+    "caption5": "example_ja",
+    "caption6": "example_ja"
+  },
   "Games": "ゲーム",
   "Gifts": "ギフト",
   "Reid": "リード",

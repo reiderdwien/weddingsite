@@ -22,12 +22,12 @@ const Gallery = () => {
 
   // Just an example, replace with your own images
   const images = [
-     {src: 'gallery.jpg', caption: 'At yellowstone'},
-     {src: 'fish.jpg', caption: 'Fish'},
-     {src: 'fish.jpg', caption: 'Fish'},
-     {src: 'fish.jpg', caption: 'Fish'},
-     {src: 'fish.jpg', caption: 'Fish'},
-     {src: 'fish.jpg', caption: 'Fish'}
+     {src: 'gallery.jpg', caption: t ('GalleryCaptions.caption1')},
+     {src: 'fish.jpg', caption: t ('GalleryCaptions.caption2')},
+     {src: 'fish.jpg', caption: t ('GalleryCaptions.caption3')},
+     {src: 'fish.jpg', caption: t ('GalleryCaptions.caption4')},
+     {src: 'fish.jpg', caption: t ('GalleryCaptions.caption5')},
+     {src: 'fish.jpg', caption: t ('GalleryCaptions.caption6')}
   ];
 
   const openModal = (image) => {

@@ -6,6 +6,14 @@
   "Bride": "Bride",
   "Home": "Home",
   "Gallery": "Gallery",
+  "GalleryCaptions": {
+    "caption1": "example_en",
+    "caption2": "example_en",
+    "caption3": "example_en",
+    "caption4": "example_en",
+    "caption5": "example_en",
+    "caption6": "example_en"
+  },
   "Games": "Games",
   "Gifts": "Gifts",
   "Reid": "Reid",
