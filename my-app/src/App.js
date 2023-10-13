@@ -11,6 +11,8 @@ import Gifts from './gifts';
 
 function App() {
 
+  <title>My title</title>
+
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
